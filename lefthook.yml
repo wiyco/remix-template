@@ -10,6 +10,10 @@ pre-commit:
       skip:
         - merge
         - rebase
+      # Temporary workaround for the issue on Windows.
+      # Error: No files matching the pattern were found
+      # exclude:
+      #   - "app/routes/*"
 
     stylelint:
       glob: "*.{css,scss}"
@@ -18,6 +22,10 @@ pre-commit:
       skip:
         - merge
         - rebase
+      # Temporary workaround for the issue on Windows.
+      # Error: No files matching the pattern were found
+      # exclude:
+      #   - "app/routes/*"
 
     prettier:
       glob: "*.{js,jsx,ts,tsx,css,scss,md}"
@@ -26,6 +34,10 @@ pre-commit:
       skip:
         - merge
         - rebase
+      # Temporary workaround for the issue on Windows.
+      # Error: No files matching the pattern were found
+      # exclude:
+      #   - "app/routes/*"
 
 post-merge:
   commands:
