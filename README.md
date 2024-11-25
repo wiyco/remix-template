@@ -74,7 +74,7 @@ npm i
 
 > [!NOTE]
 >
-> In the future, we want to migrate the Linter and Formatter from ESLint and Prettier configurations to [Biome](https://biomejs.dev). However, we need to check compatibility by comparing the configuration options.
+> In the future, I want to migrate the Linter and Formatter from ESLint and Prettier configurations to [Biome](https://biomejs.dev). However, I need to check compatibility by comparing the configuration options.
 
 #### Start Development Server
 
