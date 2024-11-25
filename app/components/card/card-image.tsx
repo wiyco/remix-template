@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { tv } from "tailwind-variants";
 
 import { cn } from "@/utils";
