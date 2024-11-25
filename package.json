@@ -1,6 +1,5 @@
 {
   "name": "remix-template",
-  "description": "Boilerplate of Remix project with Lint, TypeScript, SASS, Tailwind, Framer Motion, React Hook Form, Zod, Vitest, Storybook and more.",
   "version": "1.0.0",
   "private": true,
   "sideEffects": false,
