@@ -1,96 +1,111 @@
 # remix-template
 
-This project was created by `npx create-remix@latest` command.
+[Remix](https://github.com/remix-run/remix) framework starter repository 🐢
 
-[Remix](https://github.com/remix-run/remix) framework starter repository.
+## Tech Stack
 
-## Docs
+| Environments                | Languages                  | Linters                                                                     | Frameworks                    | Libraries                                                       | Testing                             | CI/CD                 |
+| :-------------------------- | :------------------------- | :-------------------------------------------------------------------------- | :---------------------------- | :-------------------------------------------------------------- | :---------------------------------- | :-------------------- |
+| ![node-logo]<br>![npm-logo] | ![ts-logo]<br>![sass-logo] | ![eslint-logo]<br>![stylelint-logo]<br>![prettier-logo]<br>![lefthook-logo] | ![vite-logo]<br>![remix-logo] | ![react-logo]<br>![tailwind-logo]<br>![zod-logo]<br>![rhf-logo] | ![vitest-logo]<br>![storybook-logo] | ![githubactions-logo] |
 
-- [Remix](https://remix.run/docs/en/main)
+[node-logo]: https://img.shields.io/badge/-Node.js-5FA04E.svg?logo=nodedotjs&style=flat&logoColor=ffffff
+[npm-logo]: https://img.shields.io/badge/-npm-CB3837.svg?logo=npm&style=flat&logoColor=ffffff
+[eslint-logo]: https://img.shields.io/badge/-ESLint-4B32C3.svg?logo=eslint&style=flat&logoColor=ffffff
+[stylelint-logo]: https://img.shields.io/badge/-Stylelint-263238.svg?logo=stylelint&style=flat&logoColor=ffffff
+[prettier-logo]: https://img.shields.io/badge/-Prettier-F7B93E.svg?logo=prettier&style=flat&logoColor=000000
+[lefthook-logo]: https://img.shields.io/badge/-Lefthook-FF1E1E.svg?logo=lefthook&style=flat&logoColor=000000
+[ts-logo]: https://img.shields.io/badge/-TypeScript-3178C6.svg?logo=typescript&style=flat&logoColor=ffffff
+[sass-logo]: https://img.shields.io/badge/-Sass-CC6699.svg?logo=sass&style=flat&logoColor=ffffff
+[vite-logo]: https://img.shields.io/badge/-Vite-646CFF.svg?logo=vite&style=flat&logoColor=ffffff
+[remix-logo]: https://img.shields.io/badge/-Remix-000000.svg?logo=remix&style=flat&logoColor=ffffff
+[next-logo]: https://img.shields.io/badge/-Next.js-000000.svg?logo=nextdotjs&style=flat&logoColor=ffffff
+[react-logo]: https://img.shields.io/badge/-React-61DAFB.svg?logo=react&style=flat&logoColor=000000
+[tailwind-logo]: https://img.shields.io/badge/-Tailwind%20CSS-06B6D4.svg?logo=tailwindcss&style=flat&logoColor=ffffff
+[zod-logo]: https://img.shields.io/badge/-Zod-3E67B1.svg?logo=zod&style=flat&logoColor=ffffff
+[rhf-logo]: https://img.shields.io/badge/-React%20Hook%20Form-EC5990.svg?logo=reacthookform&style=flat&logoColor=ffffff
+[vitest-logo]: https://img.shields.io/badge/-Vitest-6E9F18.svg?logo=vitest&style=flat&logoColor=ffffff
+[storybook-logo]: https://img.shields.io/badge/-Storybook-FF4785.svg?logo=storybook&style=flat&logoColor=ffffff
+[githubactions-logo]: https://img.shields.io/badge/-GitHub%20Actions-2088FF.svg?logo=githubactions&style=flat&logoColor=ffffff
+
+### Other
+
+- [framer-motion](https://www.framer.com/motion)
+- [tailwind-variants](https://www.tailwind-variants.org)
+- [clsx & tailwind-merge](./app/utils/cn.ts)
 
 ## Development
 
-First, you must install packages.
+1. [Required](#required)
+2. [Environment Variables](#environment-variables)
+3. [Commands](#commands)
 
-```bash
+### Required
+
+```ini
+node = ">=20.18"
+npm = ">=10.9"
+```
+
+> [!TIP]
+>
+> See [`.prototools`](./.prototools) for more details.
+
+### Environment Variables
+
+```ini
+
+```
+
+> [!TIP]
+>
+> See [`.env.example`](./.env.example) for more details.
+
+### Commands
+
+#### Installing Packages
+
+```sh
 npm i
 ```
 
-## Deployment
-
-First, build your app for production:
-
-```bash
-npm run build
-```
-
-Then run the app in production mode:
-
-```bash
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Packages
-
-1. [vite](#1-vite)
-2. [clsx & tailwind-merge](#2-clsx--tailwind-merge)
-3. [framer-motion](#3-framer-motion)
-4. [react-hook-form](#4-react-hook-form)
-5. [zod](#5-zod)
-6. [vitest](#6-vitest)
-7. [storybook](#7-storybook)
-
-### 1. [Vite](https://vitejs.dev)
-
-A modern frontend build tool.
-
-Bundled with Remix.
-
-### 2. clsx & tailwind-merge
-
-By using these two packages, you can concatenate class names and prevent duplication in Tailwind.
+> [!IMPORTANT]
+>
+> After the initial installation (if the format-on-save feature is not working), restart VS Code (IDE).
 
 > [!NOTE]
 >
-> The script is located in `src/utils/cn.ts`.
+> In the future, we want to migrate the Linter and Formatter from ESLint and Prettier configurations to [Biome](https://biomejs.dev). However, we need to check compatibility by comparing the configuration options.
 
-### 3. [framer-motion](https://www.framer.com/motion)
+#### Start Development Server
 
-Animations.
+```sh
+npm run dev
+```
 
-### 4. [react-hook-form](https://react-hook-form.com/docs)
+#### Linting
 
-It's foolish to handle form control without using this library.
+```sh
+npm run lint
+```
 
-> [!IMPORTANT]
+#### Formatting Code
+
+```sh
+npm run format
+```
+
+#### Running Storybook (UI component tests)
+
+```sh
+npm run sb
+```
+
+#### Running Tests
+
+```sh
+npm run test
+```
+
+> [!TIP]
 >
-> [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) required to use [Zod](#7-zod) for form validation. (already included in the package)
-
-### 5. [zod](https://zod.dev)
-
-The use cases are endless, from server-side type validation to client-side form validation.
-
-### 6. [vitest](https://vitest.dev/guide)
-
-This package is used for testing (such as unit tests).
-
-> [!IMPORTANT]
->
-> To perform UI testing, you need to configure the [@testing-library/jest-dom](https://testing-library.com/docs/ecosystem-jest-dom) package and set up [Vitest config](https://vitest.dev/config/#globals).
-
-### 7. [storybook](https://storybook.js.org/docs/get-started)
-
-Use for visual testing of UI.
-
-Useful for automatic docs generation of components, testing of theme colors, and testing with various viewports.
+> See [scripts in `package.json`](./package.json) for more details.
