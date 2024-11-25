@@ -19,8 +19,8 @@
     "format": "npm run fix:eslint && npm run fix:stylelint && npm run fix:prettier",
     "typecheck": "tsc",
     "test": "vitest",
-    "story": "storybook dev -p 6006",
-    "story:build": "storybook build"
+    "sb": "storybook dev -p 6006",
+    "sb:build": "storybook build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3",
