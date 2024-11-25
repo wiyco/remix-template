@@ -34,6 +34,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7",
     "tailwind-merge": "^2",
+    "tailwind-variants": "^0",
     "zod": "^3"
   },
   "devDependencies": {
