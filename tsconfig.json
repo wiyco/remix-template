@@ -14,11 +14,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@constants/*": ["./src/_constants/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@types/*": ["./src/types/*"],
-      "@/*": ["./app/*"],
-      "@assets/*": ["./public/assets/*"]
+      "@assets/*": ["./public/assets/*"],
+      "@/*": ["./app/*"]
     },
     "noEmit": true, // Vite takes care of building everything, not tsc.
     "incremental": true
