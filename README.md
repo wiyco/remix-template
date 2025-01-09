@@ -2,6 +2,14 @@
 
 [Remix](https://github.com/remix-run/remix) framework starter repository 🐢
 
+> [!WARNING]
+>
+> Remix v3 is now going to be released as React Router v7!!
+>
+> Details: https://remix.run/blog/merging-remix-and-react-router
+>
+> I created a template for React Router v7 => https://github.com/wiyco/react-router-template
+
 ## Tech Stack
 
 | Environments                | Languages                  | Linters                                                                     | Frameworks                    | Libraries                                                       | Testing                             | CI/CD                 |
